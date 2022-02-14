@@ -12,6 +12,7 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
 	renderers: [],
 	buildOptions: {
 		site: "https://kjmalek.info",
-		sitemap: true
+		sitemap: true,
+		pageUrlFormat: 'file',
 	}
 });
