@@ -1,0 +1,31 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import BaseHeader from "../components/BaseHeader.astro";
+
+const { content } = Astro.props;
+
+const meta = {
+  title: content.title,
+  description: content.description,
+  imageSrc: content.imageSrc,
+  imageType: content.imageType,
+  imageAlt: content.imageAlt,
+  imageWidth: content.imageWidth,
+  imageHeight: content.imageHeight,
+};
+---
+
+<html lang="en">
+  <head>
+    <BaseHead {...meta} />
+  </head>
+  <body>
+    <header class="px-80 py-9 flex flex-row bg-gray-200 items-end">
+      <BaseHeader />
+    </header>
+    <main class="mx-auto max-w-full px-80 py-24 prose text-gray-100 text-lg prose-headings:text-gray-200">
+      <slot />
+    </main>
+    <footer></footer>
+  </body>
+</html>

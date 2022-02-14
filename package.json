@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "format": "prettier --write src/",
+    "dev": "astro dev --experimental-static-build",
+    "start": "astro dev",
+    "build": "astro build --experimental-static-build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.2",
+    "astro": "^0.22.20",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.6",
+    "prettier": "^2.5.1",
+    "prettier-plugin-astro": "^0.0.12",
+    "tailwindcss": "^3.0.22"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Kellen Malek",
+  "themeColor": "#FFFFFF",
+  "icon": {
+    "small": "/assets/icon32.png",
+    "large": "/assets/icon192.png",
+    "apple": "/assets/icon-apple.png"
+  },
+  "title": "Kellen Malek",
+  "description": "Kellen Malek's Personal Website",
+  "image": {
+    "src": "/assets/image.jpg",
+    "type": "image/jpeg",
+    "alt": "alt text here",
+    "width": 1200,
+    "height": 630
+  },
+  "navigation": [
+    { "name": "HOME", "link": "/" },
+    { "name": "BIO", "link": "/bio" },
+    { "name": "PHOTOGRAPHY", "link": "/photography/" },
+    { "name": "BLOG", "link": "/blog/" },
+    { "name": "CONTACT", "link": "/contact" }
+  ]
+}
