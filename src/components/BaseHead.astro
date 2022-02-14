@@ -23,8 +23,6 @@ const { canonicalURL } = Astro.request;
 <link rel="sitemap" href="/sitemap.xml" />
 <!-- Atom Feed -->
 <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS" />
-<!-- Remove on publication -->
-<meta name="robots" content="noindex, nofollow" />
 <link rel="canonical" href={canonicalURL} />
 <!-- OpenGraph [Facebook] Metadata -->
 <meta property="og:title" content={title} />
