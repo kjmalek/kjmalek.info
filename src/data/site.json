@@ -2,9 +2,9 @@
   "name": "Kellen Malek",
   "themeColor": "#FFFFFF",
   "icon": {
-    "small": "/assets/icon32.png",
-    "large": "/assets/icon192.png",
-    "apple": "/assets/icon-apple.png"
+    "small": "/favicon-32x32.png",
+    "large": "/android-chrome-192x192.png",
+    "apple": "/apple-touch-icon.png"
   },
   "title": "Kellen Malek",
   "description": "Kellen Malek's Personal Website",
