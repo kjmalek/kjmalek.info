@@ -9,9 +9,9 @@
   "title": "Kellen Malek",
   "description": "Kellen Malek's Personal Website",
   "image": {
-    "src": "/assets/image.jpg",
-    "type": "image/jpeg",
-    "alt": "alt text here",
+    "src": "/images/default-social.webp",
+    "type": "image/webp",
+    "alt": "Kellen holding up his blue heeler, Sadie",
     "width": 1200,
     "height": 630
   },
