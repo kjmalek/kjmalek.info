@@ -1,1 +1,4 @@
-sitemap: https://kjmalek.info/sitemap.xml
+User-agent: *
+Allow: /
+
+Sitemap: https://kjmalek.info/sitemap.xml

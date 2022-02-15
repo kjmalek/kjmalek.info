@@ -20,15 +20,17 @@ const meta = {
   <head>
     <BaseHead {...meta} />
   </head>
-  <body>
+  <body class="min-h-screen flex flex-col justify-between">
     <header class="px-80 py-9 flex flex-row bg-gray-200 items-end">
       <BaseHeader />
     </header>
     <main
-      class="mx-auto max-w-full px-80 py-24 prose text-gray-100 text-lg prose-headings:text-gray-200"
+      class="mx-auto max-w-full px-80 py-24 prose text-gray-100 text-xl prose-headings:text-gray-200"
     >
       <slot />
     </main>
-    <footer></footer>
+    <footer class="max-w-full text-center text-xl py-8">
+      &#xA9; 2022 Kellen Malek
+    </footer>
   </body>
 </html>
