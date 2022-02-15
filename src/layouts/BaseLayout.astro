@@ -1,6 +1,7 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import BaseHeader from "../components/BaseHeader.astro";
+import site from "../site.config.json";
 
 const { content } = Astro.props;
 
@@ -21,16 +22,16 @@ const meta = {
     <BaseHead {...meta} />
   </head>
   <body class="min-h-screen flex flex-col justify-between">
-    <header class="px-80 py-9 flex flex-row bg-gray-200 items-end">
+    <header class="2xl:px-80 lg:px-40 py-9 flex lg:flex-row flex-col bg-gray-200 lg:items-end items-center">
       <BaseHeader />
     </header>
     <main
-      class="mx-auto max-w-full px-80 py-24 prose text-gray-100 text-xl prose-headings:text-gray-200"
+      class="mx-auto max-w-full xl:px-80 lg:px-60 sm:px-20 px-4 lg:py-24 py-8 prose text-gray-100 text-xl prose-headings:text-gray-200"
     >
       <slot />
     </main>
     <footer class="max-w-full text-center text-xl py-8">
-      &#xA9; 2022 Kellen Malek
+      &#xA9; 2022 {site.author}
     </footer>
   </body>
 </html>

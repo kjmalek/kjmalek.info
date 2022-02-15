@@ -1,5 +1,6 @@
 {
   "name": "Kellen Malek",
+  "author": "Kellen Malek",
   "themeColor": "#FFFFFF",
   "icon": {
     "small": "/favicon-32x32.png",
@@ -16,7 +17,6 @@
     "height": 630
   },
   "navigation": [
-    { "name": "HOME", "link": "/" },
     { "name": "BIO", "link": "/bio" },
     { "name": "PHOTOGRAPHY", "link": "/photography/" },
     { "name": "BLOG", "link": "/blog/" },
