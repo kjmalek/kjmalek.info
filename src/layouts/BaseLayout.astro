@@ -22,11 +22,13 @@ const meta = {
     <BaseHead {...meta} />
   </head>
   <body class="min-h-screen flex flex-col justify-between">
-    <header class="2xl:px-80 lg:px-40 py-9 flex lg:flex-row flex-col bg-gray-200 lg:items-end items-center">
+    <header
+      class="2xl:px-80 lg:px-40 py-9 flex lg:flex-row flex-col bg-gray-200 lg:items-end items-center"
+    >
       <BaseHeader />
     </header>
     <main
-      class="mx-auto max-w-full xl:px-80 lg:px-60 sm:px-20 px-4 lg:py-24 py-8 prose text-gray-100 text-xl prose-headings:text-gray-200"
+      class="mx-auto max-w-full xl:px-80 lg:px-60 sm:px-20 px-4 lg:py-16 py-8 prose text-gray-100 text-xl prose-headings:text-gray-200 prose-a:text-gray-200 prose-a:font-bold"
     >
       <slot />
     </main>

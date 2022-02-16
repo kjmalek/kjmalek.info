@@ -1,0 +1,24 @@
+---
+import site from '../site.config.json';
+
+const {
+  srcset = {
+    avif: "",
+    webp: ""
+  },
+  src = "",
+  alt,
+  width = 1040,
+  height = 1040,
+  loading = "lazy",
+} = Astro.props;
+
+const avifSrc = `${site.media}/w_300,h_100,c_fit/${src}.avif`;
+const fallbackSrc = `${site.media}/${src}.jpeg`;
+---
+
+<picture>
+  <source type="image/avif" srcset={avifSrc} />
+  <source type="image/webp" srcset={srcset.webp} />
+  <img {alt} {width} {height} {loading} src={fallbackSrc} />
+</picture>
