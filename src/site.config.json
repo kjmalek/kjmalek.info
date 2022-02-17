@@ -21,5 +21,6 @@
     { "name": "PHOTOGRAPHY", "link": "/photography/" },
     { "name": "BLOG", "link": "/blog/" },
     { "name": "CONTACT", "link": "/contact" }
-  ]
+  ],
+  "media": "https://res.cloudinary.com/kjmalek/image/upload"
 }
