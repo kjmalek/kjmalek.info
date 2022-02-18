@@ -14,5 +14,10 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
 		site: "https://kjmalek.info",
 		sitemap: true,
 		pageUrlFormat: 'file',
-	}
+	},
+	vite: {
+		ssr: {
+			external: ["svgo"],
+		},
+	},
 });
