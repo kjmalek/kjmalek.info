@@ -1,6 +1,6 @@
 ---
 import site from "../site.config.json";
-import { Icon } from 'astro-icon';
+import { Icon } from "astro-icon";
 ---
 
 <a alt="Home" href="/" class="text-5xl font-bold basis-1/2">{site.title}</a>
@@ -11,7 +11,15 @@ import { Icon } from 'astro-icon';
         <a href={navItem.link}>{navItem.name}</a>
       </li>
     ))}
-    <li><a href="https://github.com/kjmalek"><Icon name="akar-icons:github-fill" title="github" width="24"/></a></li>
-    <li><a href="https://twitter.com/kellenjmalek"><Icon name="akar-icons:twitter-fill" title="twitter" width="24"/></a></li>
+    <li>
+      <a href="https://github.com/kjmalek"
+        ><Icon name="akar-icons:github-fill" title="github" width="24" /></a
+      >
+    </li>
+    <li>
+      <a href="https://twitter.com/kellenjmalek"
+        ><Icon name="akar-icons:twitter-fill" title="twitter" width="24" /></a
+      >
+    </li>
   </ul>
 </nav>

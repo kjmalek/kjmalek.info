@@ -1,5 +1,7 @@
 ---
 layout: "../../layouts/BaseLayout.astro"
+setup: |
+  import Posts from "../../components/Posts.astro";
 ---
 
-Sorry, I haven't written any blog posts yet, but I'm planning on writing one soon.
+<Posts/>
