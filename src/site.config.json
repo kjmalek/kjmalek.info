@@ -17,9 +17,7 @@
     "height": 630
   },
   "navigation": [
-    { "name": "BIO", "link": "/bio" },
-    { "name": "PHOTOGRAPHY", "link": "/photography/" },
-    { "name": "BLOG", "link": "/blog/" }
+    { "name": "BIO", "link": "/bio" }
   ],
   "media": "https://res.cloudinary.com/kjmalek/image/upload"
 }
