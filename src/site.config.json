@@ -16,8 +16,6 @@
     "width": 1200,
     "height": 630
   },
-  "navigation": [
-    { "name": "BIO", "link": "/bio" }
-  ],
+  "navigation": [{ "name": "BIO", "link": "/bio" }],
   "media": "https://res.cloudinary.com/kjmalek/image/upload"
 }

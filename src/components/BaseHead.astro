@@ -1,5 +1,6 @@
 ---
 import site from "../site.config.json";
+import '../styles/global.css';
 
 const {
   title = site.title,
@@ -42,8 +43,3 @@ const { canonicalURL } = Astro.request;
 <link rel="icon" href={site.icon.large} sizes="192x192" type="image/png" />
 <link rel="apple-touch-icon" href={site.icon.apple} />
 <!-- Preload some assets -->
-<!-- Stylesheets and Scripts -->
-
-<style global>
-  @import "/src/styles/global.css";
-</style>

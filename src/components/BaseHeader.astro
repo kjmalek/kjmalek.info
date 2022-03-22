@@ -5,7 +5,7 @@ import { Icon } from "astro-icon";
 
 <a alt="Home" href="/" class="text-5xl font-bold basis-1/2">{site.title}</a>
 <nav class="basis-1/2 pt-2">
-  <ul class="xl:text-xl flex flex-row md:gap-10 gap-5 -mb-4">
+  <ul class="xl:text-xl flex flex-row md:gap-10 gap-5 -mb-4 lg:justify-end">
     {site.navigation.map((navItem) => (
       <li>
         <a href={navItem.link}>{navItem.name}</a>

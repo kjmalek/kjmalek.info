@@ -1,9 +1,0 @@
----
-import site from "../site.config.json";
-
-const { src, alt, width = 1040, height = 1040, loading = "lazy" } = Astro.props;
-
-const cloudSrc = `${site.media}/w_${width},h_${height},c_fit,f_auto/${src}`;
----
-
-<img {alt} {width} {height} {loading} src={cloudSrc} />
