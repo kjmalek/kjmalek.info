@@ -1,20 +1,17 @@
-import { defineConfig } from 'astro/config';
-import sitemap from '@astrojs/sitemap';
-import tailwind from '@astrojs/tailwind';
+import { defineConfig } from "astro/config";
+import sitemap from "@astrojs/sitemap";
+import tailwind from "@astrojs/tailwind";
 
+// https://astro.build/config
 export default defineConfig({
-	integrations: [
-		sitemap(),
-		tailwind(),
-	],
-	buildOptions: {
-		site: "https://kjmalek.info",
-		sitemap: true,
-		pageUrlFormat: 'file',
-	},
-	vite: {
-		ssr: {
-			external: ["svgo"],
-		},
-	},
+  integrations: [sitemap(), tailwind()],
+  site: "https://kjmalek.info",
+  build: {
+    format: "file"
+  },
+  vite: {
+    ssr: {
+      external: ["svgo"]
+    }
+  }
 });
