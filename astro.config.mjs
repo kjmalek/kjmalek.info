@@ -7,11 +7,14 @@ export default defineConfig({
   integrations: [sitemap(), tailwind()],
   site: "https://kjmalek.info",
   build: {
-    format: "file"
+    format: "file",
+  },
+  experimental: {
+    contentCollections: true,
   },
   vite: {
     ssr: {
-      external: ["svgo"]
-    }
-  }
+      external: ["svgo"],
+    },
+  },
 });
