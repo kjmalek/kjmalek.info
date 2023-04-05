@@ -3,8 +3,8 @@
   "author": "Kellen Malek",
   "themeColor": "#FFFFFF",
   "icon": {
-    "small": "/favicon-32x32.png",
-    "large": "/android-chrome-192x192.png",
+    "small": "/icon5.png",
+    "large": "/icon192.png",
     "apple": "/apple-touch-icon.png"
   },
   "title": "Kellen Malek",
@@ -16,6 +16,11 @@
     "width": 1200,
     "height": 630
   },
-  "navigation": [{ "name": "BIO", "link": "/bio" }],
+  "navigation": [
+    {
+      "name": "BIO",
+      "link": "/bio"
+    }
+  ],
   "media": "https://res.cloudinary.com/kjmalek/image/upload"
 }

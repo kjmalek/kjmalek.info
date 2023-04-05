@@ -3,48 +3,37 @@ import site from "../site.config.json";
 import { Icon } from "astro-icon";
 ---
 
-<span class="text-4xl font-bold basis-1/2"
-  ><a alt="Home" href="/">{site.title}</a></span
+<span class="text-4xl font-bold bg-gray-300 rounded py-2 px-4 shadow-2xl"
+  ><a class="hover:underline hover:text-emerald-700" href="/">{site.title}</a
+  ></span
 >
-<nav class="basis-1/2 pt-2">
+<nav class="pt-2 shadow-2xl">
   <ul
-    class="xl:text-xl flex flex-row md:gap-8 gap-4 lg:justify-end items-center"
+    class="xl:text-xl flex flex-row md:gap-6 gap-4 lg:justify-end items-center bg-gray-300 pl-2 rounded"
   >
     {
       site.navigation.map((navItem) => (
         <li>
-          <a href={navItem.link}>{navItem.name}</a>
+          <a class="hover:text-emerald-700 hover:underline" href={navItem.link}>
+            {navItem.name}
+          </a>
         </li>
       ))
     }
-    <li class="icon">
-      <a href="https://github.com/kjmalek"
-        ><Icon name="akar-icons:github-fill" title="github" width="24" />
+    <li>
+      <a
+        class="hover:text-emerald-700 block p-2 border-2 rounded border-transparent hover:border-emerald-700"
+        href="https://github.com/kjmalek"
+      >
+        <Icon name="akar-icons:github-fill" title="github" width="24" />
       </a>
     </li>
-    <li class="icon">
+    <li
+      class="hover:text-emerald-700 block p-2 border-2 rounded border-transparent hover:border-emerald-700"
+    >
       <a href="mailto:me@kjmalek.info">
         <Icon name="bytesize:mail" title="mail" width="24" />
       </a>
     </li>
   </ul>
 </nav>
-
-<style>
-  a:hover {
-    color: rgb(45, 83, 64);
-    text-decoration: underline;
-  }
-  .icon {
-    padding: 2px;
-    border: 2px solid;
-    border-color: rgb(45, 83, 64, 0);
-  }
-  .icon:hover {
-    border-color: rgb(45, 83, 64, 1);
-    border-radius: 3px;
-  }
-  .icon:hover a {
-    color: rgb(45, 83, 64);
-  }
-</style>

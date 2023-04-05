@@ -1,6 +1,6 @@
 ---
 import site from "../site.config.json";
-import '../styles/global.css';
+import "../styles/global.css";
 
 const {
   title = site.title,
@@ -39,7 +39,5 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 <!-- Twitter Metadata -->
 <meta name="twitter:card" content="summary_large_image" />
 <!-- Icons -->
-<link rel="icon" href={site.icon.small} sizes="32x32" type="image/png" />
 <link rel="icon" href={site.icon.large} sizes="192x192" type="image/png" />
-<link rel="apple-touch-icon" href={site.icon.apple} />
 <!-- Preload some assets -->
