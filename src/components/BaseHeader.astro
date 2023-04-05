@@ -9,7 +9,7 @@ import { Icon } from "astro-icon";
 >
 <nav class="pt-2 shadow-2xl">
   <ul
-    class="xl:text-xl flex flex-row md:gap-6 gap-4 lg:justify-end items-center bg-gray-300 pl-2 rounded"
+    class="xl:text-xl flex flex-row gap-4 lg:justify-end items-center bg-gray-300 pl-2 rounded"
   >
     {
       site.navigation.map((navItem) => (
@@ -23,7 +23,19 @@ import { Icon } from "astro-icon";
     <li>
       <a
         class="hover:text-emerald-700 block p-2 border-2 rounded border-transparent hover:border-emerald-700"
+        href="https://www.linkedin.com/in/kellen-malek-5552a8115/"
+        target="_blank"
+        title="LinkedIn"
+      >
+        <Icon name="bi:linkedin" title="linkedin" width="24" />
+        <span class="sr-only">LinkedIn</span>
+      </a>
+    </li>
+    <li>
+      <a
+        class="hover:text-emerald-700 block p-2 border-2 rounded border-transparent hover:border-emerald-700"
         href="https://github.com/kjmalek"
+        target="_blank"
         title="Github"
       >
         <Icon name="akar-icons:github-fill" title="github" width="24" />
