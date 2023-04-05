@@ -1,0 +1,20 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import { Image } from "astro:assets";
+import bookBike from "../assets/bookbike.jpg";
+
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout {frontmatter}>
+  <div class="flex flex-col-reverse md:flex-row gap-6">
+    <Image
+      class="w-72 h-96 rounded-full mx-auto"
+      src={bookBike}
+      alt="Kellen Malek standing next to the North Vancouver City Library book bike."
+    />
+    <div>
+      <slot />
+    </div>
+  </div>
+</BaseLayout>

@@ -10,4 +10,4 @@ In 2019, I earned my MLIS at the University of British Columbia, where I focused
 
 Along with a brief stint as a Book Bike Ambassador with the [North Vancouver City Library](https://www.nvcl.ca/spokes-n-words-book-bike), I have spent the past few years working as a contractor with [RavenSpace Publishing](https://www.ravenspacepublishing.org/), where I have been consulting and developing documentation around topics like metadata, digital preservation, web performance, and platform administration related to applications like Scalar and DSpace.
 
-When I'm not spending my time learning about new digital tools, I can be found wandering in the woods with my [wife](https://clairiel.com/) and our wild dog.
+When I'm not spending my time learning about new digital tools, I can be found wandering in the woods with my [wife](https://clairiel.com/) and our [wild dog](/images/majesticSadie.jpg).

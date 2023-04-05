@@ -11,6 +11,7 @@ export default defineConfig({
   },
   experimental: {
     contentCollections: true,
+    assets: true,
   },
   vite: {
     ssr: {

@@ -3,16 +3,18 @@ import BaseHead from "../components/BaseHead.astro";
 import BaseHeader from "../components/BaseHeader.astro";
 import site from "../site.config.json";
 
-const { content } = Astro.props;
+const { frontmatter } = Astro.props;
 
 const meta = {
-  title: content.title,
-  description: content.description,
-  imageSrc: content.imageSrc,
-  imageType: content.imageType,
-  imageAlt: content.imageAlt,
-  imageWidth: content.imageWidth,
-  imageHeight: content.imageHeight,
+  title: frontmatter.title ? frontmatter.title : site.title,
+  description: frontmatter.description
+    ? frontmatter.description
+    : site.description,
+  imageSrc: frontmatter.imageSrc ? frontmatter.imageSrc : site.image.src,
+  imageType: frontmatter.imageType ? frontmatter.imageType : site.image.type,
+  imageAlt: frontmatter.imageAlt ? frontmatter.imageAlt : site.image.alt,
+  imageWidth: frontmatter.imageWidth ? frontmatter.imageWidth : 1200,
+  imageHeight: frontmatter.imageHeight ? frontmatter.imageHeight : 630,
 };
 ---
 

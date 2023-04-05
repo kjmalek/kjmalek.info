@@ -2,13 +2,13 @@
 import site from "../site.config.json";
 
 const {
-  title = site.title,
-  description = site.description,
-  imageSrc = site.image.src,
-  imageType = site.image.type,
-  imageAlt = site.image.alt,
-  imageWidth = 1200,
-  imageHeight = 630,
+  title,
+  description,
+  imageSrc,
+  imageType,
+  imageAlt,
+  imageWidth,
+  imageHeight,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -39,3 +39,4 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 <meta name="twitter:card" content="summary_large_image" />
 <!-- Icons -->
 <link rel="icon" href={site.icon.large} sizes="192x192" type="image/png" />
+<meta name="generator" content={Astro.generator} />
