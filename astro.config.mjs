@@ -10,7 +10,6 @@ export default defineConfig({
     format: "file",
   },
   experimental: {
-    contentCollections: true,
     assets: true,
   },
   vite: {
